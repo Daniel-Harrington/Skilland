@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+/* Reset default margin and padding on the body */
+body {
+    overflow: hidden; /* Hide overflow content */
+    height: 100vh;
+
+    text-align: center;
+
+
+    background: rgb(54,72,206);
+    background: -moz-linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
+    background: -webkit-linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
+    background: linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3648ce",endColorstr="#e2fb79",GradientType=1);
+}   
+.intro{
+    font-family: 'Poppins',sans-serif;
+    color:hsl(182, 15%, 8%);
+    align-self:center;
+    margin-top: 15vh;
+    margin-bottom: 9%;
+    font-size: 1.5vw;
+}
+.intro2{
+    font-family: 'Poppins',sans-serif;
+    color:hsl(182, 15%, 8%);
+    align-self:center;
+    margin-top: 12%;
+    font-size: 1.5vw;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items:end;
+    margin-top: auto;
+}
+/* Style the center div and h1 text */
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+/* Style the stacked copies */
+.skills_text {
+    font-size:10vw; /* Same font size as the original text */
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color:hsl(182, 15%, 8%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow */
+}
+.mainoutline{
+    z-index: 2;}
+.fallingtextdown h1 {
+    text-shadow: none;
+    animation: fadeScaleDown 8s infinite ease-in;
+}
+
+/* Individual animations with different delays */
+.fallingtextdown h1:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fallingtextdown h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.fallingtextdown h1:nth-child(3) {
+    animation-delay: 4s;
+}
+.fallingtextdown h1:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.risingtextup h1 {
+    text-shadow: none;
+    animation: fadeScaleUp 8s infinite ease-in;
+}
+
+/* Individual animations with different delays */
+.risingtextup h1:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.risingtextup h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.risingtextup h1:nth-child(3) {
+    animation-delay: 4s;
+}
+.risingtextup h1:nth-child(4) {
+    animation-delay: 6s;
+}
+
+
+/* Define the animation */
+@keyframes fadeScaleUp {
+    0% {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-140%) scale(1.2);
+    }
+}
+/* Define the animation */
+@keyframes fadeScaleDown {
+    0% {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(160%) scale(1.2);
+    }
+}
+
+@media (pointer:none), (pointer:coarse)  {
+    .intro{
+        font-family: 'Poppins',sans-serif;
+        color:hsl(182, 15%, 8%);
+        align-self:center;
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+        font-size: 3vw;
+    }
+    .intro2{
+        font-family: 'Poppins',sans-serif;
+        color:hsl(182, 15%, 8%);
+        align-self:center;
+        margin-top: 10vh;
+        font-size: 3vw;
+    }
+    .journey {
+        align-items: center;
+        appearance: none;
+        background-color:hsl(182, 15%, 8%);
+        border-radius: 1vh;
+        border-width: 0;
+        box-shadow: hsl(182, 15%, 8%) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,hsla(180, 26%, 32%, 0.549) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: whitesmoke;
+        width: fit-content;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: 'Poppins',sans-serif;
+        justify-content: right;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding: 6% 6% 6% 6%;
+        margin: 2%;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 2vh;
+        z-index: 10;
+      }
+      
+
+}
+/* CSS */
+.journey {
+  align-items: center;
+  appearance: none;
+  background-color:hsl(182, 15%, 8%);
+  border-radius: 1vh;
+  border-width: 0;
+  box-shadow: hsl(182, 15%, 8%) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,hsla(180, 26%, 32%, 0.549) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: whitesmoke; 
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Poppins',sans-serif;
+  justify-content: right;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 1.5% 4% 1.5% 4%;
+  margin: 1%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 2vh;
+  z-index: 10;
+
+}
+
+.journey:focus {
+  box-shadow:hsla(180, 26%, 32%, 0.549)  0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.journey:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.journey:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+  .typing-demo {
+    width: 17ch;
+    animation: typing 1.5s steps(19) ;
+    white-space: nowrap;
+    overflow: hidden;
+
+  }
+  .wrapper {
+   
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+  }
+      
