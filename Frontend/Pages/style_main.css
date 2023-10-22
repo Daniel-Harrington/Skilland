@@ -8,11 +8,11 @@ body {
     text-align: center;
 
 
-    background: rgb(54,72,206);
-    background: -moz-linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
-    background: -webkit-linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
-    background: linear-gradient(340deg, rgba(54,72,206,1) 0%, rgba(109,181,225,1) 47%, rgba(226,251,121,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3648ce",endColorstr="#e2fb79",GradientType=1);
+    background: rgb(63,141,162);
+    background: -moz-radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
+    background: radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f8da2",endColorstr="#e2fb79",GradientType=1); 
 }   
 .intro{
     font-family: 'Poppins',sans-serif;
