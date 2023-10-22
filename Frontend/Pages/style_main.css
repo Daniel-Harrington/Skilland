@@ -8,15 +8,15 @@ body {
     text-align: center;
 
 
-    background: rgb(63,141,162);
-    background: -moz-radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
-    background: radial-gradient(circle, rgba(63,141,162,1) 0%, rgba(226,251,121,1) 100%);
+    background: #3f8da2;
+    background: -moz-radial-gradient(circle, #3f8da2 0%, #e2fb79 100%);
+    background: -webkit-radial-gradient(circle, #3f8da2 0%, #e2fb79 100%);
+    background: radial-gradient(circle, #3f8da2 0%, #e2fb79 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f8da2",endColorstr="#e2fb79",GradientType=1); 
 }   
 .intro{
     font-family: 'Poppins',sans-serif;
-    color:hsl(182, 15%, 8%);
+    color:#111717;
     align-self:center;
     margin-top: 15vh;
     margin-bottom: 9%;
@@ -24,7 +24,7 @@ body {
 }
 .intro2{
     font-family: 'Poppins',sans-serif;
-    color:hsl(182, 15%, 8%);
+    color:#111717;
     align-self:center;
     margin-top: 12%;
     font-size: 1.5vw;
@@ -57,8 +57,8 @@ body {
     font-size:10vw; /* Same font size as the original text */
     position: absolute;
     font-family: 'Poppins', sans-serif;
-    color:hsl(182, 15%, 8%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow */
+    color:#111717;
+    text-shadow: 2px 2px 4px #00000080; /* Add a drop shadow */
 }
 .mainoutline{
     z-index: 2;}
@@ -133,7 +133,7 @@ body {
 @media (pointer:none), (pointer:coarse)  {
     .intro{
         font-family: 'Poppins',sans-serif;
-        color:hsl(182, 15%, 8%);
+        color:#111717;
         align-self:center;
         margin-top: 30vh;
         margin-bottom: 10vh;
@@ -141,7 +141,7 @@ body {
     }
     .intro2{
         font-family: 'Poppins',sans-serif;
-        color:hsl(182, 15%, 8%);
+        color:#111717;
         align-self:center;
         margin-top: 10vh;
         font-size: 3vw;
@@ -149,10 +149,10 @@ body {
     .journey {
         align-items: center;
         appearance: none;
-        background-color:hsl(182, 15%, 8%);
+        background-color:#111717;
         border-radius: 1vh;
         border-width: 0;
-        box-shadow: hsl(182, 15%, 8%) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,hsla(180, 26%, 32%, 0.549) 0 -3px 0 inset;
+        box-shadow: #111717 0 2px 4px,#2d23424d 0 7px 13px -3px,#3c67678c 0 -3px 0 inset;
         box-sizing: border-box;
         color: whitesmoke;
         width: fit-content;
@@ -184,10 +184,10 @@ body {
 .journey {
   align-items: center;
   appearance: none;
-  background-color:hsl(182, 15%, 8%);
+  background-color:#111717;
   border-radius: 1vh;
   border-width: 0;
-  box-shadow: hsl(182, 15%, 8%) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,hsla(180, 26%, 32%, 0.549) 0 -3px 0 inset;
+  box-shadow: #111717 0 2px 4px,#2d23424d 0 7px 13px -3px,#3c67678c 0 -3px 0 inset;
   box-sizing: border-box;
   color: whitesmoke; 
   cursor: pointer;
@@ -214,11 +214,11 @@ body {
 }
 
 .journey:focus {
-  box-shadow:hsla(180, 26%, 32%, 0.549)  0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow:#3c67678c  0 0 0 1.5px inset, #2d234266 0 2px 4px, #2d23424d 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .journey:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: #2d234266 0 4px 8px, #2d23424d 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
