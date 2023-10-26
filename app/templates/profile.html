@@ -1,0 +1,5 @@
+<h1>Hello {{ user['name'] }}</h1>
+{% for skill_key, skill_value in user['skills'].items() %}
+    <h3>{{ skill_key }}</h3>
+    <p>{{ skill_value }}</p>
+{% endfor %}
