@@ -14,7 +14,7 @@
             "username": "test2",
             "password": "test2",
             "skills":{"Singing":"Beginner","Cooking":"Intermediate","Dancing":"Expert"},
-            "interests":{"Coding":"Beginner", "Designing":"Intermediate", "Photography":"Expert"}
+            "interests":{"Cooking":"Beginner", "Dancing":"Intermediate", "Photography":"Expert", "Singing":"Expert"}
         },
         {
             "id": 3,
