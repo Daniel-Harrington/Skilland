@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Skillsland</title>
-    <link rel="stylesheet" type="text/css" href="style_main.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
 
 </head>
 <body>
     <div class="navbar">
         <button class="journey" role="button">About</button>
-        <button class="journey" role="button">Login</button>
+
+        <button onclick="{{ url_for('login') }}" class="journey" role="button" >Login</button>
         <button class="journey" role="button">Signup</button>
         
     </div>
     <div class="wrapper">
-    <h2 class="intro noselect typing-demo">You have arrived to</h2>
+    <h2 class="intro noselect">You have arrived to</h2>
 </div>  
     <div class="center">
         <div class="center risingtextup">
