@@ -1,7 +1,7 @@
 from flask import Flask, render_template,request,redirect,url_for,session
 import json
 app = Flask(__name__)
-
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 @app.route("/")
 def main():
     return render_template('main.html')
@@ -21,8 +21,8 @@ def login():
             for user in data['users']:
                 print(user)
                 if username == user['username'] and password == user['password']:
-                    redirect(url_for('match',user=user))
-                    return match(user)
+                    session['user'] = user
+                    return redirect(url_for('profile'))
                     
             else:
                 return render_template('login.html', error="Invalid username or password")
@@ -44,11 +44,16 @@ def signup():
     return render_template('signupquiz.html')
 
 @app.route("/match")
-def match(user):
-    print('GOT USER')
+def match():
     return render_template('matchpage.html')
+    
 
-
+@app.route("/profile")
+def profile():
+    print('GOT USER')
+    user = session['user']
+    print(user['name'])
+    return render_template('matchpage.html',name=user['name'],skills=user['skills'])
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080,debug=True)
