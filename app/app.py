@@ -53,7 +53,7 @@ def profile():
     print('GOT USER')
     user = session['user']
     print(user['name'])
-    return render_template('matchpage.html',name=user['name'],skills=user['skills'])
+    return render_template('profile.html',user=user)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080,debug=True)
