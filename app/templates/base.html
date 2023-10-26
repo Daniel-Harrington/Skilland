@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Skillsland</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+</head>
+<body>
+    <div class="navbar">
+        {%if loggedIn == True%}
+        <a href= "/profile" class="journey" role="button">Profile</a>
+        <a href="/login" class="journey" role="button" >Match</a>
+        {%else%}
+        <a href= "/signup" class="journey" role="button">About</a>
+        <a href="/login" class="journey" role="button" >Login</a>
+        <a href="/signup" class="journey" role="button">Signup</a>
+        {%endif%}
+    </div>
+    <div class="center">
+        <div class="center risingtextup">
+            <h1 class="skills_text noselect">SKILLAND</h1>
+            <h1 class="skills_text noselect">SKILLAND</h1>
+            <h1 class="skills_text noselect">SKILLAND</h1>
+            <h1 class="skills_text noselect">SKILLAND</h1>
+        </div>
+        <h1 id="centerText" class="skills_text noselect mainoutline">SKILLAND</h1>
+        <div class="center fallingtextdown">
+            <h1 class="skills_text noselect ">SKILLAND</h1>
+            <h1 class="skills_text noselect ">SKILLAND</h1>
+            <h1 class="skills_text noselect ">SKILLAND</h1>
+            <h1 class="skills_text noselect ">SKILLAND</h1>
+        </div>
+    </div>
+    <h2 class="intro2 noselect">Gain friends and skills that last.</h2>
+    <button class="journey" role="button">Start Your Journey</button>
+</body>
+</html>

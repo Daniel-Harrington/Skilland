@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "username": "test",
+            "password": "test",
+            "skills":{"Coding":1, "Designing":2, "Photography":3}
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "username": "test2",
+            "password": "test2",
+            "skills":{"Singing":2,"Cooking":0}
+        }
+    ]
+}
