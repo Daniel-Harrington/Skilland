@@ -1,2 +1,12 @@
-<h1>{{name}}</h1>
-<p>{{skills}}</p>
+
+{% for user in matches %}
+    <div class="card">
+        <div class="card-header">
+            <h3>{{ user['name'] }}</h3>
+        </div>
+        <div class="card-body">
+            <p><strong>Skills:</strong> {{ user['skills'] }}</p>
+            <p><strong>Interests:</strong> {{ user['interests'] }}</p>
+        </div>
+    </div>
+{% endfor %}

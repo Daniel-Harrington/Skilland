@@ -43,9 +43,18 @@ def about():
 def signup():
     return render_template('signupquiz.html')
 
-@app.route("/match")
+@app.route("/matches")
 def match():
-    return render_template('matchpage.html')
+    currentuser = session['user']
+    session['matches'] = []
+    with open ('db.json') as f:
+            data = json.load(f)
+            for user in data['users']:
+                if user != currentuser:
+                    if any(item in user['interests'] for item in currentuser['skills']) and any(item in currentuser['interests'] for item in user['skills']):
+                        session['matches'].append(user)
+                 
+    return render_template('matchpage.html',matches=session['matches'])
     
 
 @app.route("/profile")

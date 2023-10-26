@@ -5,14 +5,41 @@
             "name": "John Doe",
             "username": "test",
             "password": "test",
-            "skills":{"Coding":"Beginner", "Designing":"Intermediate", "Photography":"Expert"}
+            "skills":{"Coding":"Beginner", "Designing":"Intermediate", "Photography":"Expert"},
+            "interests":{"Singing":"Expert","Cooking":"Beginner","Dancing":"Intermediate"}
         },
         {
             "id": 2,
             "name": "Jane Doe",
             "username": "test2",
             "password": "test2",
-            "skills":{"Singing":"Beginner","Cooking":"Intermediate","Dancing":"Expert"}
+            "skills":{"Singing":"Beginner","Cooking":"Intermediate","Dancing":"Expert"},
+            "interests":{"Coding":"Beginner", "Designing":"Intermediate", "Photography":"Expert"}
+        },
+        {
+            "id": 3,
+            "name": "Bob Smith",
+            "username": "test3",
+            "password": "test3",
+            "skills":{"Coding":"Expert", "Designing":"Expert", "Photography":"Beginner"},
+            "interests":{"Singing":"Beginner","Cooking":"Expert","Dancing":"Intermediate"}
+        },
+        {
+            "id": 4,
+            "name": "Alice Johnson",
+            "username": "test4",
+            "password": "test4",
+            "skills":{"Singing":"Intermediate","Cooking":"Expert","Dancing":"Beginner"},
+            "interests":{"Coding":"Expert", "Designing":"Expert", "Photography":"Beginner"}
+        },
+        {
+            "id": 5,
+            "name": "Mike Brown",
+            "username": "test5",
+            "password": "test5",
+            "skills":{"Coding":"Intermediate", "Designing":"Beginner", "Photography":"Intermediate"},
+            "interests":{"Singing":"Expert","Cooking":"Beginner","Dancing":"Expert"}
         }
     ]
 }
+  

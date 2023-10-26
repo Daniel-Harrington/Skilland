@@ -1,5 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Skillsland</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="/matches"class="journey" role="button">Match</a>
+
+        <a href="/login" class="journey" role="button" >Teach</a>
+        <button class="journey" role="button">People</button>
+        
+    </div>
 <h1>Hello {{ user['name'] }}</h1>
 {% for skill_key, skill_value in user['skills'].items() %}
     <h3>{{ skill_key }}</h3>
     <p>{{ skill_value }}</p>
 {% endfor %}
+</body>
