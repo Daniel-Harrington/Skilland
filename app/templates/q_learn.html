@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interests Inventory</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+  </head>
+
+  <body class="interest-inventory-page">
+    <div class="center-content-flex">
+      <div class="welcome-header"><h3>Interests Inventory</h3></div>
+      <div class="progress-container">
+        <p class="progress-label">What are your interests?</p>
+        <div class="progresss-bar">
+          <div class="progress-bar-progress"></div>
+        </div>
+        <p class="disclaimer">
+          Please select one or more categories that represent your interests.
+        </p>
+      </div>
+      <div class="answer-content">
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Music & Instruments" class="answer-container">
+            <img src="../static/Images/Group 2323.png" />
+            <p>Music & Instruments</p>
+          </div>
+        </label>
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Coding & Technology" class="answer-container">
+            <img src="../static/Images/Vector.png" />
+            <p>Coding & Technology</p>
+          </div>
+        </label>
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Cooking & Baking" class="answer-container">
+            <img src="../static/Images/Vector-1.png" />
+            <p>Cooking & Baking</p>
+          </div>
+        </label>
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Arts & Craft" class="answer-container">
+            <img src="../static/Images/Vector-2.png" />
+            <p>Arts & Craft</p>
+          </div>
+        </label>
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Languages & Communications" class="answer-container">
+            <img src="../static/Images/icon-park-outline_communication.png" />
+            <p>Languages & Communications</p>
+          </div>
+        </label>
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Fitness & Wellbeing" class "answer-container">
+            <img src="../static/Images/maki_fitness-centre.png" />
+            <p>Fitness & Wellbeing</p>
+          </div>
+        </label>
+      </div>
+
+      <p class="disclaimer">
+        Note: Selecting multiple categories will help you find like-minded individuals.
+      </p>
+      <div class="next-navigation-container">
+        <div class="next-button">Previous</div>
+        <div class="next-button">Next</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      console.log("ready!");
+
+      // Add click event listener to all checkboxes
+      $(".switch input[type='checkbox']").click(function() {
+        var div_id = $(this).parent().find(".answer-container").attr('id'); // Get the ID of the parent <div>
+
+        // Create a data object to send to the server
+        var dataToSend = {
+          "div_id": div_id
+        };
+
+        $.ajax({
+          url: '/div_clicked',
+          type: 'POST',
+          contentType: 'application/json',
+          dataType: 'json',
+          data: JSON.stringify(dataToSend),
+          success: function(response) {
+            console.log(response);
+          }
+        });
+      });
+    });
+  </script>
+</html>
