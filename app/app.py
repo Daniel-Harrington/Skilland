@@ -12,7 +12,7 @@ def add_user(userdata, filename='data.json'):
           # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
-        file_data["users"].append(userdata)
+        file_data["users"] = file_data["users"] | userdata
         # Sets file's current position at offset.
         file.seek(0)
         # convert back to json.
@@ -72,6 +72,10 @@ def signup():
     else:
         return render_template('signupquiz.html')
 
+@app.route("/signup", methods=['GET', 'POST'])
+def signup():
+    return render_template('signupquiz.html')
+
 @app.route("/matches")
 def match():
     currentuser = session['user']
@@ -102,23 +106,29 @@ def profile():
     print(user['name'])
     return render_template('profile.html',user=user)
 
-@app.route('/quiz')
-def quiz():
-    session['skills'] = []
+@app.route('/quiz1')
+def quiz1():
+    session['skills'] = {}
+    return render_template('q_teach1.html')
+@app.route('/quiz2')
+def quiz2():
+    session['skills'] = {}
     return render_template('q_teach1.html')
 
 @app.route("/div_clicked", methods=['POST'])
 def div_clicked():
-    skills = session['skills']
+
     data = request.json
+    print(data)
     if data and 'div_id' in data:
         if data['div_id'][:6] == 'skill_':
             div_id = data['div_id'][6:]
             print(div_id)
-            if div_id in skills:
-                skills.remove(div_id)
+            if div_id in session['skills']:
+                session['skills'].pop(div_id)
             else:
-                skills.append(div_id)
+                session['skills'] = session['skills'] | {div_id:data['selectedValue']}
+            print(session['skills'])
             return jsonify({"result": "success"})
     return jsonify({"result": "failure"})
         
