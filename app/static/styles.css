@@ -15,7 +15,7 @@ body {
 }
 .intro {
   font-family: "Poppins", sans-serif;
-  color: #111717;
+  color: #ffffff;
   align-self: center;
   margin-top: 15vh;
   margin-bottom: 9%;
@@ -23,7 +23,7 @@ body {
 }
 .intro2 {
   font-family: "Poppins", sans-serif;
-  color: #111717;
+  color: #ffffff;
   align-self: center;
   margin-top: 12%;
   font-size: 1.5vw;
@@ -56,7 +56,7 @@ body {
   font-size: 10vw; /* Same font size as the original text */
   position: absolute;
   font-family: "Poppins", sans-serif;
-  color: #111717;
+  color: #ffffff;
   text-shadow: 2px 2px 4px #00000080; /* Add a drop shadow */
 }
 .mainoutline {
@@ -132,7 +132,7 @@ body {
 @media (pointer: none), (pointer: coarse) {
   .intro {
     font-family: "Poppins", sans-serif;
-    color: #111717;
+    color: #ffffff;
     align-self: center;
     margin-top: 30vh;
     margin-bottom: 10vh;
@@ -140,7 +140,7 @@ body {
   }
   .intro2 {
     font-family: "Poppins", sans-serif;
-    color: #111717;
+    color: #ffffff;
     align-self: center;
     margin-top: 10vh;
     font-size: 3vw;
@@ -256,11 +256,12 @@ body {
   font-size: 25px;
   text-align: center;
   padding: 10px 10px;
-  padding-top: 30px;
+  padding-top: 10px;
   font-weight: 800;
 }
 
-.welcome-header h2 {
+.welcome-header h2,
+.welcome-header h3 {
   margin: 0;
   padding: 0;
 }
@@ -288,18 +289,18 @@ body {
   text-align: center;
   transition: transform 500ms;
   cursor: pointer;
-  margin: 15px;
+  margin: 10px;
 }
 
 .answer-container img {
   background-color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 25px;
   margin: 10px;
   margin-bottom: 0px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   object-fit: contain;
   transition: background-color 500ms;
 }
@@ -339,10 +340,11 @@ body {
 
 .skill-inventory-page {
   background: white;
+  margin: 0px 100px;
 }
 
 .next-navigation-container {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -351,7 +353,7 @@ body {
 
 .progress-container {
   width: 95%;
-  margin-bottom: 30px;
+  margin-bottom: -10px;
 }
 
 .progress-label {
@@ -589,4 +591,164 @@ input + .answer-container > select {
 
 input:checked + .answer-container > select {
   display: unset;
+}
+
+.landing-page-section {
+  height: 100vh;
+}
+
+/* about section here */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-left: -12%;
+  margin-bottom: 0%;
+}
+
+.about_content .p {
+  text-align: left;
+  width: 50vw;
+}
+
+.about_img img {
+  width: 35vw;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 42%;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 2rem;
+  margin-top: -40%;
+  margin-bottom: 4%;
+}
+
+.p {
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+/* how does it work section */
+.hdiw {
+  color: white;
+  min-height: auto;
+  padding-bottom: 10rem;
+}
+
+h3 {
+  display: block;
+  font-size: 2em;
+}
+
+.hdiw_container {
+  color: #623132;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+  position: absolute;
+  top: 250%;
+  right: 10%;
+  left: 10%;
+}
+
+.hdiw_container .hdiw_box {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: -20%;
+}
+
+.hdiw_box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.hdiw_box:hover img {
+  transform: scale(1.1);
+}
+
+.hdiw_box .hdiw_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.hdiw_box:hover .hdiw_layer {
+  transform: translateY(0);
+}
+
+/* contact section */
+.contact {
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.contact h2 {
+  margin-top: -2%;
+  text-align: center;
+  font-size: 220%;
+}
+
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-top: -9%;
+}
+
+.contact form .input_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input_box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #522e2e;
+  background: white;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input_box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+/* footer section */
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
+.foooter_text {
+  font-size: 1.6rem;
 }
