@@ -1,7 +1,46 @@
-<p>Login</p>
-<form action="/login" method="post">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit" value="Login"> 
-</form>
-<p>{{error}}</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skillsland</title>
+    <link rel="stylesheet" type="text/css" href="../static/login.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form action="">
+        <!--login sign-->
+        <h1>Login into Skilland</h1>
+        <!-- input-->
+        <form action="/login" method="post">
+          <div class="input_box">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="input_box">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <input type="submit" class="button" value="Login" />
+        </form>
+        <p>{{error}}</p>
+
+        <!-- followup -->
+        <div class="register_link">
+          <p>
+            Don't have an account?
+            <a href="#">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
