@@ -9,9 +9,9 @@
   <body class="skill-inventory-page">
     <div class="profile-page">
       <div class="profile-page-header">
-        <img src="../static/Matches/Rectangle 232.png" />
+        <img src="../static/Matches/user{{user['id']}}.png" />
         <div class="profile-page-header-info">
-          <h2>William Thompson</h2>
+          <h2>{{user["name"]}}</h2>
           <h3>Toronto, Canada</h3>
         </div>
       </div>
@@ -19,10 +19,7 @@
         <h4>Overview</h4>
         <div class="line"></div>
         <p class="profile-paragraph">
-          Hi, I'm William Thompson, a seasoned UX designer with over 10 years in
-          the field. I have a passion for creating intuitive, user-friendly
-          experiences. I strongly believe in sustainable design practices and
-          using technology to solve real-world problems.
+          {{user['bio']}}
         </p>
         <div class="work-experience-title">
           <img
@@ -32,10 +29,7 @@
           <h2>Work Experience</h2>
         </div>
         <p class="profile-paragraph">
-          Hi, I'm William Thompson, a seasoned UX designer with over 10 years in
-          the field. I have a passion for creating intuitive, user-friendly
-          experiences. I strongly believe in sustainable design practices and
-          using technology to solve real-world problems.
+            {{user['bio']}}
         </p>
 
         <div class="profile-page-buttons">
