@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Interests Inventory</title>
+    <title>Skillsland</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -11,16 +11,17 @@
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
   </head>
 
-  <body class="interest-inventory-page">
+  <body class="skill-inventory-page">
     <div class="center-content-flex">
       <div class="welcome-header"><h3>Interests Inventory</h3></div>
       <div class="progress-container">
-        <p class="progress-label">What are your interests?</p>
+        <p class="progress-label">What are you interested in?</p>
         <div class="progresss-bar">
           <div class="progress-bar-progress"></div>
         </div>
         <p class="disclaimer">
-          Please select one or more categories that represent your interests.
+          Please select one or more categories that represent the interests you can
+          offer.
         </p>
       </div>
       <div class="answer-content">
@@ -29,6 +30,12 @@
           <div id="interest_Music & Instruments" class="answer-container">
             <img src="../static/Images/Group 2323.png" />
             <p>Music & Instruments</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
         <label class="switch">
@@ -36,6 +43,12 @@
           <div id="interest_Coding & Technology" class="answer-container">
             <img src="../static/Images/Vector.png" />
             <p>Coding & Technology</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
         <label class="switch">
@@ -43,6 +56,12 @@
           <div id="interest_Cooking & Baking" class="answer-container">
             <img src="../static/Images/Vector-1.png" />
             <p>Cooking & Baking</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
         <label class="switch">
@@ -50,6 +69,12 @@
           <div id="interest_Arts & Craft" class="answer-container">
             <img src="../static/Images/Vector-2.png" />
             <p>Arts & Craft</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
         <label class="switch">
@@ -57,23 +82,123 @@
           <div id="interest_Languages & Communications" class="answer-container">
             <img src="../static/Images/icon-park-outline_communication.png" />
             <p>Languages & Communications</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
         <label class="switch">
           <input type="checkbox" />
-          <div id="interest_Fitness & Wellbeing" class "answer-container">
+          <div id="interest_Fitness & Wellbeing" class="answer-container">
             <img src="../static/Images/maki_fitness-centre.png" />
             <p>Fitness & Wellbeing</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+      </div>
+      <div id="interest_Science & Academics" class="answer-content">
+        <label class="switch">
+          <input type="checkbox" />
+          <div class="answer-container">
+            <img src="../static/Images/Vector-5.png" />
+            <p>Science & Academics</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Home & DIY" class="answer-container">
+            <img src="../static/Images/Vector-4.png" />
+            <p>Home & DIY</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Business & Finance" class="answer-container">
+            <img src="../static/Images/carbon_finance.png" />
+            <p>Business & Finance</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Outdoor & Adventure" class="answer-container">
+            <img src="../static/Images/Vector-3.png" />
+            <p>Outdoor & Adventure</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Photography & Videography" class="answer-container">
+            <img src="../static/Images/Vector-6.png" />
+            <p>Photography & Videography</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div id="interest_Personal Development" class="answer-container">
+            <img
+              src="../static/Images/icon-park-outline_personal-collection.png"
+            />
+            <p>Personal Development</p>
+            <select class="selection">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <option value="expert">Expert</option>
+            </select>
           </div>
         </label>
       </div>
 
       <p class="disclaimer">
-        Note: Selecting multiple categories will help you find like-minded individuals.
+        Note: Selecting multiple categories will increase your chances of
+        finding a compatible interest exchange partner.
       </p>
       <div class="next-navigation-container">
-        <div class="next-button">Previous</div>
-        <div class="next-button">Next</div>
+        <a class="next-button">Previous</a>
+        <a class="next-button"  href="/quiz2" >class="next-button">Next</a>
       </div>
     </div>
   </body>
@@ -81,13 +206,15 @@
     $(document).ready(function () {
       console.log("ready!");
 
-      // Add click event listener to all checkboxes
-      $(".switch input[type='checkbox']").click(function() {
-        var div_id = $(this).parent().find(".answer-container").attr('id'); // Get the ID of the parent <div>
+      // Add change event listener to all <select> elements with class "selection"
+      $(".selection").change(function() {
+        var div_id = $(this).parent().attr('id'); // Get the ID of the parent <div>
+        var selectedValue = $(this).val(); // Get the selected option value
 
         // Create a data object to send to the server
         var dataToSend = {
-          "div_id": div_id
+          "div_id": div_id,
+          "selectedValue": selectedValue
         };
 
         $.ajax({
