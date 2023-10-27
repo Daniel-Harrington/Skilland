@@ -5,7 +5,17 @@
     <title>Skillsland</title>
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
   </head>
-
+  <nav class="lists navbar">
+    <ul>
+        <li><a href="/matches">Find</a></li>
+        <li><a href="/people">People</a></li>
+        <li><a href="/class">Class</a></li>
+        <li><a href="/profile">{{user['username']}}</a></li>
+        
+    </ul>
+    <img class="profile-image navimg" src="../static/Matches/user{{user['id']}}.png" />
+  </nav>
+  </div>
   <body class="skill-inventory-page">
     <div class="center-content-flex">
       <div class="welcome-header"><h2>Your Perfect Matches Await</h2></div>
@@ -14,6 +24,21 @@
         for you.
       </p>
       <div class="matches-content">
+        {% for match in matches %}
+        <div class="matches-container">
+         
+          <img class="match-image" src="../static/Matches/user{{match['id']}}.png" />
+          <p class="match-name"> {{match['name']}}</p>
+          <p class="match-description">
+            {{match['bio']}}
+          </p>
+          <div class="matches-button-container">
+            <div class="matches-button-outline">Profile</div>
+            <div class="matches-button" >Book Now</div>
+          </div>
+          
+        </div>
+<<<<<<< Updated upstream
         <div class="matches-container">
           <img class="match-image" src="../static/Matches/Rectangle 231.png " />
           <p class="match-name">Priya Patel</p>
@@ -50,18 +75,10 @@
             <div class="matches-button">Book Now</div>
           </div>
         </div>
-        <div class="matches-container">
-          <img class="match-image" src="../static/Matches/Rectangle 231.png " />
-          <p class="match-name">Priya Patel</p>
-          <p class="match-description">
-            A talented cloud developer passionate about leveraging cloud
-            solutions for sustainability.
-          </p>
-          <div class="matches-button-container">
-            <div class="matches-button-outline">Profile</div>
-            <div class="matches-button">Book Now</div>
-          </div>
-        </div>
+=======
+        {% endfor %}
+
+>>>>>>> Stashed changes
       </div>
     </div>
   </body>
