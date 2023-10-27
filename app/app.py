@@ -108,7 +108,7 @@ def quiz1():
 @app.route('/quiz2')
 def quiz2():
     
-    return render_template('q_teach1.html')
+    return render_template('q_learn.html')
 
 @app.route("/div_clicked", methods=['POST'])
 def div_clicked():
