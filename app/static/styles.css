@@ -607,6 +607,10 @@ input:checked + .answer-container > select {
   margin-bottom: 0%;
 }
 
+.about_content {
+  margin-top: -50px;
+}
+
 .about_content .p {
   text-align: left;
   width: 50vw;
@@ -654,7 +658,7 @@ h3 {
   align-items: center;
   gap: 5rem;
   position: absolute;
-  top: 250%;
+  top: 200%;
   right: 10%;
   left: 10%;
 }
@@ -688,13 +692,16 @@ h3 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
 }
 
+.hdiw_layer p {
+  margin: 0 30px;
+}
+
 .hdiw_box:hover .hdiw_layer {
-  transform: translateY(0);
+  transform: translateY(-15px);
 }
 
 /* contact section */
@@ -720,6 +727,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .contact form .input_box input,
@@ -734,7 +742,7 @@ h3 {
 }
 
 .contact form .input_box input {
-  width: 49%;
+  width: 43%;
 }
 
 .contact form textarea {
@@ -751,4 +759,19 @@ h3 {
 
 .foooter_text {
   font-size: 1.6rem;
+}
+
+.journey_button {
+  display: inline-block;
+  padding: 0.6rem 2.8rem;
+  background: black;
+  border-radius: 4rem;
+  box-shadow: 0 0 0.5rem black;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  border-style: solid;
+  transition: 0.5s ease;
+  position: relative;
+  bottom: 10%;
 }
