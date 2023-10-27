@@ -61,7 +61,7 @@ def about():
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
-    if request.method == 'Post':
+    if request.method == 'POST':
         session['username'] = request.form['username']
         session['password'] = request.form['password']
         session['name'] = request.form['name']
