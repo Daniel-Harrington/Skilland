@@ -301,6 +301,7 @@ body {
   width: 50px;
   height: 50px;
   object-fit: contain;
+  transition: background-color 500ms;
 }
 
 .answer-container p {
@@ -570,4 +571,22 @@ body {
   height: 70px;
   object-fit: fill;
   border-radius: 100px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:checked + .answer-container > img {
+  background-color: #58a8c576;
+}
+
+input + .answer-container > select {
+  display: none;
+}
+
+input:checked + .answer-container > select {
+  display: unset;
 }
