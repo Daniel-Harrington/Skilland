@@ -12,7 +12,7 @@ def add_user(userdata, filename='data.json'):
           # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
-        file_data["users"].append(userdata)
+        file_data["users"] = file_data["users"] | userdata
         # Sets file's current position at offset.
         file.seek(0)
         # convert back to json.
@@ -58,19 +58,17 @@ def login():
 def about():
     return render_template('about.html')
 
+
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        skills = request.form['skill']
-        interests = request.form['interest']
-        name = "name"
-        new_user = {'username':username,'password':password,'skills':skills.split(','),'interests':interests.split(','),'name':name}
-        add_user(new_user)
-        return redirect(url_for('login'))
-    else:
-        return render_template('signupquiz.html')
+    if request.method == 'Post':
+        session['username'] = request.form['username']
+        session['password'] = request.form['password']
+        session['name'] = request.form['name']
+        session['bio'] = request.form['bio']
+
+        return redirect(url_for('quiz1'))
+    return render_template('signup.html')
 
 @app.route("/matches")
 def match():
@@ -102,23 +100,32 @@ def profile():
     print(user['name'])
     return render_template('profile.html',user=user)
 
-@app.route('/quiz')
-def quiz():
-    session['skills'] = []
+@app.route('/quiz1')
+def quiz1():
+    session['skills'] = {}
+    
+    return render_template('q_teach1.html')
+@app.route('/quiz2')
+def quiz2():
+    
     return render_template('q_teach1.html')
 
 @app.route("/div_clicked", methods=['POST'])
 def div_clicked():
-    skills = session['skills']
+
     data = request.json
+    print(data)
     if data and 'div_id' in data:
         if data['div_id'][:6] == 'skill_':
             div_id = data['div_id'][6:]
             print(div_id)
-            if div_id in skills:
-                skills.remove(div_id)
+            if div_id in session['skills']:
+                session['skills'].pop(div_id)
             else:
-                skills.append(div_id)
+                session['skills'] = session['skills'] | {div_id:data['selectedValue']}
+            
+            new_user = {'name':session['name'],'username':session['username'],'password':session['password'],'skills':session['skills']}
+            print(new_user)
             return jsonify({"result": "success"})
     return jsonify({"result": "failure"})
         

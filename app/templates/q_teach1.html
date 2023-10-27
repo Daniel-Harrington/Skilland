@@ -205,17 +205,27 @@
   <script>
     $(document).ready(function () {
       console.log("ready!");
-      $("div").click(function () {
-        var div_id = $(this).attr("id");
+
+      // Add change event listener to all <select> elements with class "selection"
+      $(".selection").change(function() {
+        var div_id = $(this).parent().attr('id'); // Get the ID of the parent <div>
+        var selectedValue = $(this).val(); // Get the selected option value
+
+        // Create a data object to send to the server
+        var dataToSend = {
+          "div_id": div_id,
+          "selectedValue": selectedValue
+        };
+
         $.ajax({
-          url: "/div_clicked",
-          type: "POST",
-          contentType: "application/json",
-          dataType: "json",
-          data: JSON.stringify({ div_id: div_id }),
-          success: function (response) {
+          url: '/div_clicked',
+          type: 'POST',
+          contentType: 'application/json',
+          dataType: 'json',
+          data: JSON.stringify(dataToSend),
+          success: function(response) {
             console.log(response);
-          },
+          }
         });
       });
     });
