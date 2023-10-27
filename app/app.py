@@ -107,7 +107,7 @@ def quiz1():
     return render_template('q_teach1.html')
 @app.route('/quiz2')
 def quiz2():
-    
+    session['interests'] = {}
     return render_template('q_learn.html')
 
 @app.route("/div_clicked", methods=['POST'])
@@ -125,6 +125,16 @@ def div_clicked():
                 session['skills'] = session['skills'] | {div_id:data['selectedValue']}
             
             new_user = {'name':session['name'],'username':session['username'],'password':session['password'],'skills':session['skills']}
+            print(new_user)
+            return jsonify({"result": "success"})
+        elif data['div_id'][:10] == 'interest_':
+            div_id = data['div_id'][10:]
+            if div_id in session['interests']:
+                session['interests'].pop(div_id)
+            else:
+                session['interests'].append(div_id)
+            
+            new_user = {'name':session['name'],'username':session['username'],'password':session['password'],'skills':session['skills'],'interests':session['interests']}
             print(new_user)
             return jsonify({"result": "success"})
     return jsonify({"result": "failure"})

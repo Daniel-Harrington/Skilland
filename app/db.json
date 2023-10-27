@@ -10,11 +10,9 @@
                 "Designing": "Intermediate",
                 "Photography": "Expert"
             },
-            "interests": {
-                "Singing": "Expert",
-                "Cooking": "Beginner",
-                "Dancing": "Intermediate"
-            },
+            "interests": [
+                "Singing",
+                "Dancing"],
             "bio": "Hi, I'm John Doe. I'm a beginner at coding, intermediate at designing, and an expert at photography. In my free time, I enjoy singing and dancing."
         },
         {
@@ -27,12 +25,7 @@
                 "Cooking": "Intermediate",
                 "Dancing": "Expert"
             },
-            "interests": {
-                "Cooking": "Beginner",
-                "Dancing": "Intermediate",
-                "Photography": "Expert",
-                "Singing": "Expert"
-            },
+            "interests": ["Cooking", "Photography"],
             "bio": "Hi, I'm Jane Doe. I'm a beginner at singing, intermediate at cooking, and an expert at dancing. In my free time, I enjoy photography and singing."
         },
         {
