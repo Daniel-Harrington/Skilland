@@ -58,23 +58,17 @@ def login():
 def about():
     return render_template('about.html')
 
-@app.route("/signup", methods=['GET', 'POST'])
-def signup():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        skills = request.form['skill']
-        interests = request.form['interest']
-        name = "name"
-        new_user = {'username':username,'password':password,'skills':skills.split(','),'interests':interests.split(','),'name':name}
-        add_user(new_user)
-        return redirect(url_for('login'))
-    else:
-        return render_template('signupquiz.html')
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
-    return render_template('signupquiz.html')
+    if request.method == 'Post':
+        session['username'] = request.form['username']
+        session['password'] = request.form['password']
+        session['name'] = request.form['name']
+        session['bio'] = request.form['bio']
+
+        return redirect(url_for('quiz1'))
+    return render_template('signup.html')
 
 @app.route("/matches")
 def match():
@@ -109,10 +103,11 @@ def profile():
 @app.route('/quiz1')
 def quiz1():
     session['skills'] = {}
+    
     return render_template('q_teach1.html')
 @app.route('/quiz2')
 def quiz2():
-    session['skills'] = {}
+    
     return render_template('q_teach1.html')
 
 @app.route("/div_clicked", methods=['POST'])
@@ -128,7 +123,9 @@ def div_clicked():
                 session['skills'].pop(div_id)
             else:
                 session['skills'] = session['skills'] | {div_id:data['selectedValue']}
-            print(session['skills'])
+            
+            new_user = {'name':session['name'],'username':session['username'],'password':session['password'],'skills':session['skills']}
+            print(new_user)
             return jsonify({"result": "success"})
     return jsonify({"result": "failure"})
         
