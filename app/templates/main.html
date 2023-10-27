@@ -6,31 +6,138 @@
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
   </head>
   <body>
-    <div class="navbar">
-      <button class="journey" role="button">About</button>
+    <div class="landing-page-section">
+      <div class="navbar">
+        <button class="journey" role="button">About</button>
 
-      <a href="/login" class="journey" role="button">Login</a>
-      <button class="journey" role="button">Signup</button>
-    </div>
-    <div class="wrapper">
-      <h2 class="intro noselect">You have arrived to</h2>
-    </div>
-    <div class="center">
-      <div class="center risingtextup">
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
+        <a href="/login" class="journey" role="button">Login</a>
+        <button class="journey" role="button">Signup</button>
       </div>
-      <h1 id="centerText" class="skills_text noselect mainoutline">SKILLAND</h1>
-      <div class="center fallingtextdown">
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
-        <h1 class="skills_text noselect">SKILLAND</h1>
+      <div class="wrapper">
+        <h2 class="intro noselect">You have arrived to</h2>
       </div>
+      <div class="center">
+        <div class="center risingtextup">
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+        </div>
+        <h1 id="centerText" class="skills_text noselect mainoutline">
+          SKILLAND
+        </h1>
+        <div class="center fallingtextdown">
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+          <h1 class="skills_text noselect">SKILLAND</h1>
+        </div>
+      </div>
+      <h2 class="intro2 noselect">Gain friends and skills that last.</h2>
+      <a href="/quiz"
+        ><button class="journey" role="button">Start Your Journey</button></a
+      >
     </div>
-    <h2 class="intro2 noselect">Gain friends and skills that last.</h2>
-    <a href="/quiz"><button class="journey" role="button">Start Your Journey</button></a> 
+
+    <section class="about" id="about">
+      <div class="about_img">
+        <img src="../static/Home/Image1_After.png" alt="boat photo" />
+      </div>
+
+      <div class="about_content">
+        <h2 class="heading">About Us</h2>
+        <h2 class="subtitle">
+          Genuine Connections Like the ones back in school days
+        </h2>
+        <p class="p">
+          Everyone is busy, everyone is on the clock. Our schedules are swamped
+          up with uncountable deadlines because we want to enjoy our lives in
+          the way we expected. Then where is the time for making stable
+          meaningful connections and feeling a sense of belonging? There're
+          plenty of social apps, parties, gartherings, networkings as we grow
+          up, but that don't make us find resonance. It's either too business to
+          be personal or too emotional to be stable. Other than family, only
+          people with the same interests or hobbies in person makes the longest
+          relationships. And why is that?
+        </p>
+        <p class="p">
+          The key is in person company and mutual growth. Think back the time
+          when you are in school, you have your best friendships because you are
+          together days per week, sharing similar courses schedules, learning
+          together and from each other. People say school time friendships are
+          forever but they always end so soon. Yet, we still eager that types of
+          companions even we are not in that time anymore.
+        </p>
+        <p class="p">
+          So we build Skilland, through skills learning groups within local
+          community, our users can learn the skills they want from their crew
+          and also share the skills they have. From the journey of in person
+          skillsharing, hopefully you can find companionships that worth your
+          energy and vise versa.
+        </p>
+      </div>
+    </section>
+
+    <!--how does it work/feature section-->
+    <section class="features" id="features">
+      <h2 class="heading">How does it work?</h2>
+
+      <div class="hdiw_container">
+        <div class="hdiw_box">
+          <img src="../static/Home/Image2_After.png" alt="crew" />
+          <div class="hdiw_layer">
+            <h3>Crew</h3>
+            <p>
+              At crew, you can check your group mates info and sent messages.
+              Groups in 2 or in 4, skill learning based on weekly or biweekly in
+              person courses hosted by your crew.
+            </p>
+          </div>
+        </div>
+
+        <div class="hdiw_box">
+          <img src="../static/Home/Image3_After.png" alt="crew" />
+          <div class="hdiw_layer">
+            <h3>Deck</h3>
+            <p>
+              At deck, you can check your courses progress, and also your
+              skillsharing courses outline and resources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <h2 class="contact h2">Want to know more?</h2>
+
+      <form action="#">
+        <div class="input_box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+        </div>
+
+        <div class="input_box">
+          <input type="number" placeholder="Mobile" />
+          <input type="text" placeholder="Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="15"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="journey_button" />
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer_text">
+        <p>&copy; 2023 by Markle Ning</p>
+      </div>
+    </footer>
   </body>
 </html>
