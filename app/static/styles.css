@@ -163,7 +163,7 @@ body {
     line-height: 1;
     list-style: none;
     overflow: hidden;
-    padding: 6% 6% 6% 6%;
+    padding: 6% 6% 6% 6%ts;
     margin: 2%;
     position: relative;
     text-align: left;
@@ -196,7 +196,7 @@ body {
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding: 1.5% 4% 1.5% 4%;
+  padding: 0.5% 1% 0.5% 1%;
   margin: 1%;
   position: relative;
   text-align: left;
@@ -207,8 +207,62 @@ body {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 2vh;
+  font-size: 1.8    vh;
   z-index: 10;
+}
+
+.navimg{
+   margin-left: 0;
+    width: 3%;
+    height: 4%;
+    object-fit: contain;
+    border-radius: 60%;
+}
+.lists{
+    padding: 10px 20px;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: small;
+    margin-bottom: 0;
+}
+
+.lists ul{
+    padding:0;
+    display:flex;
+    justify-content:flex-end;
+    list-style-type: none;
+}
+
+.lists li{
+    margin-left:20px;
+}
+
+.lists ul li{
+    display:inline-block;
+    margin-right:30px;
+}
+
+.lists a{
+    font-family:"komet", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s, font-weight 0.3s;
+}
+.lists a:visited{
+    color:black;
+}
+.lists a:unvisited{
+    color:black;
+}
+.lists a:hover{
+    color:black;
+    font-weight:bold;
+}
+
+.lists a.active{
+    font-weight:bold;
 }
 
 .journey:focus {
