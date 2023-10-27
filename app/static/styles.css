@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   align-self: center;
-  margin-top: 15vh;
+  margin-top: 24vh;
   margin-bottom: 9%;
   font-size: 1.5vw;
 }
@@ -33,6 +33,8 @@ body {
   justify-content: right;
   align-items: end;
   margin-top: auto;
+  position: fixed;
+  width: 98%;
 }
 /* Style the center div and h1 text */
 .center {
@@ -828,4 +830,20 @@ h3 {
   transition: 0.5s ease;
   position: relative;
   bottom: 10%;
+}
+
+.navbar-button {
+  /* text-decoration: underline; */
+  transition: text-decoration-color 500ms;
+  text-decoration-color: transparent;
+  margin: 10px 20px;
+  font-size: 18px;
+  color: black;
+}
+
+.navbar-button:hover {
+  /* text-decoration: underline !important;
+  text-decoration-color: black; */
+  color: black;
+  font-weight: bold;
 }
