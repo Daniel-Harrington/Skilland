@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< Updated upstream
   <head>
     <meta charset="UTF-8" />
     <title>Skillsland</title>
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
   </head>
+ <div class="navbar">
+        <a href="/matches"class="journey" role="button">Match</a>
+        <a class="journey" role="button">People</a>
+        <a href="/login" class="journey" role="button" >Class</a>
 
+        
+    </div>
   <body class="skill-inventory-page">
     <div class="profile-page">
       <div class="profile-page-header">
@@ -41,25 +46,3 @@
     </div>
   </body>
 </html>
-=======
-<head>
-    <meta charset="UTF-8">
-    <title>Skillsland</title>
-    <link rel="stylesheet" type="text/css" href="../static/styles.css">
-
-</head>
-<body>
-    <div class="navbar">
-        <a href="/matches"class="journey" role="button">Match</a>
-        <a class="journey" role="button">People</a>
-        <a href="/login" class="journey" role="button" >Class</a>
-
-        
-    </div>
-<h1>Hello {{ user['name'] }}</h1>
-{% for skill_key, skill_value in user['skills'].items() %}
-    <h3>{{ skill_key }}</h3>
-    <p>{{ skill_value }}</p>
-{% endfor %}
-</body>
->>>>>>> Stashed changes

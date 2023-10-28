@@ -2,93 +2,133 @@
     "users": [
         {
             "id": 1,
-            "name": "John Doe",
-            "username": "test",
-            "password": "test",
-            "skills": {
-                "Coding": "Beginner",
-                "Designing": "Intermediate",
-                "Photography": "Expert"
-            },
             "interests": [
-                "Singing",
-                "Dancing"],
-            "bio": "Hi, I'm John Doe. I'm a beginner at coding, intermediate at designing, and an expert at photography. In my free time, I enjoy singing and dancing."
+                "Cooking & Baking",
+                "Music & Instruments",
+                "Home & DIY"
+            ],
+            "name": "Markle",
+            "password": "markle",
+            "skills": {
+                "Languages & Communications": "advanced",
+                "Outdoor & Adventure": "advanced",
+                "Personal Development": "advanced"
+            },
+            "username": "markle"
         },
         {
             "id": 2,
-            "name": "Tom Holland",
-            "username": "test2",
-            "password": "test2",
+            "interests": [
+                "Languages & Communications"
+            ],
+            "name": "Gina",
+            "password": "gina",
             "skills": {
-                "Singing": "Beginner",
-                "Cooking": "Intermediate",
-                "Dancing": "Expert"
+                "Coding & Technology": "advanced",
+                "Cooking & Baking": "intermediate",
+                "Fitness & Wellbeing": "advanced",
+                "Outdoor & Adventure": "advanced"
             },
-            "interests": ["Cooking", "Photography"],
-            "bio": "Hi, I'm Jane Doe. I'm a beginner at singing, intermediate at cooking, and an expert at dancing. In my free time, I enjoy photography and singing."
+            "username": "gina"
         },
         {
             "id": 3,
-            "name": "Steve Jobs",
-            "username": "test3",
-            "password": "test3",
+            "interests": [
+                "Fitness & Wellbeing",
+                "Personal Development"
+            ],
+            "name": "Dan",
+            "password": "dan",
             "skills": {
-                "Coding": "Expert",
-                "Designing": "Expert",
-                "Photography": "Beginner"
+                "Business & Finance": "intermediate",
+                "Coding & Technology": "advanced",
+                "Cooking & Baking": "expert"
             },
-            "interests": {
-                "Singing": "Beginner",
-                "Cooking": "Expert",
-                "Dancing": "Intermediate"
-            },
-            "bio": "Hi, I'm an idiot"
+            "username": "dan"
         },
         {
             "id": 4,
-            "name": "Alice Johnson",
-            "username": "test4",
-            "password": "test4",
+            "interests": [
+                "Personal Development",
+                "Cooking & Baking",
+                "Business & Finance",
+                "Fitness & Wellbeing"
+            ],
+            "name": "James",
+            "password": "james",
             "skills": {
-                "Singing": "Intermediate",
-                "Cooking": "Expert",
-                "Dancing": "Beginner"
+                "Home & DIY": "intermediate"
             },
-            "interests": {
-                "Coding": "Expert",
-                "Designing": "Expert",
-                "Photography": "Beginner"
-            },
-            "bio": "Hi, I'm Alice Johnson. I'm an intermediate at singing, an expert at cooking, and a beginner at dancing. In my free time, I enjoy coding and designing."
+            "username": "james"
         },
         {
             "id": 5,
-            "name": "Mike Brown",
-            "username": "test5",
-            "password": "test5",
+            "interests": [
+                "Music & Instruments",
+                "Outdoor & Adventure"
+            ],
+            "name": "Endril",
+            "password": "endril",
             "skills": {
-                "Designing": "Beginner",
-                "Photography": "Intermediate",
-                "Crying": "Expert"
+                "Business & Finance": "expert",
+                "Coding & Technology": "intermediate",
+                "Fitness & Wellbeing": "advanced",
+                "Personal Development": "advanced"
             },
-            "interests": {
-                "Singing": "Expert",
-                "Cooking": "Beginner",
-                "Dancing": "Expert"
-            },
-            "bio": "Hi, I'm Mike Brown. I'm a beginner at designing, intermediate at photography, and an expert at crying. In my free time, I enjoy singing and dancing."
+            "username": "endril"
         },
         {
-            "username": "pleaseword",
-            "password": "bar",
-            "skills": [
-                "drinking"
-            ],
+            "id": 6,
             "interests": [
-                "bars"
+                "Personal Development",
+                "Home & DIY",
+                "Business & Finance"
             ],
-            "name": "name"
+            "name": "Taylor",
+            "password": "taylor",
+            "skills": {
+                "Cooking & Baking": "intermediate",
+                "Home & DIY": "expert",
+                "Languages & Communications": "advanced",
+                "Outdoor & Adventure": "advanced"
+            },
+            "username": "taylor"
+        },
+        {
+            "id": 7,
+            "username": "alice",
+            "name": "Alice",
+            "password": "alice",
+            "bio": "I want to learn to code",
+            "interests": ["Coding & Technology"],
+            "skills": {"Business & Finance": "intermediate"}
+        },
+        {
+            "id": 8,
+            "username": "bob",
+            "name": "Bob",
+            "password": "bob",
+            "bio": "Im bob",
+            "interests": ["Coding & Technology", "Photography & Videography", "Personal Development"],
+            "skills": {"Cooking & Baking": "intermediate", "Arts & Craft": "intermediate", "Coding & Technology": "intermediate", "Fitness & Wellbeing": "advanced"}
+        },
+        {
+            "id": 9,
+            "username": "charlie",
+            "name": "Charlie",
+            "bio":"I am a student. I am interested in learning new skills and meeting new people.",
+            "password": "charlie",
+            "interests": ["Music & Instruments", "Languages & Communications"],
+            "skills": {"Photography & Videography": "expert", "Coding & Technology": "beginner"}
+        },
+        {
+            "id": 10,
+            "username": "diana",
+            "name": "Diana",
+            "bio": "I am a student. I am interested in learning new skills and meeting new people.",
+            "password": "diana",
+            "interests": ["Business & Finance", "Outdoor & Adventure", "Arts & Craft", "Fitness & Wellbeing"],
+            "skills": {"Personal Development": "beginner", "Business & Finance": "beginner", "Outdoor & Adventure": "beginner"}
         }
     ]
 }

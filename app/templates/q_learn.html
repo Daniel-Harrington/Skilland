@@ -138,7 +138,7 @@
       </p>
       <div class="next-navigation-container">
         <a class="next-button">Previous</a>
-        <a class="next-button"  href="/quiz2" >class="next-button">Next</a>
+        <a class="next-button"  href="/matches" >class="next-button">Next</a>
       </div>
     </div>
   </body>
@@ -146,15 +146,13 @@
     $(document).ready(function () {
       console.log("ready!");
 
-      // Add change event listener to all <select> elements with class "selection"
-      $(".selection").change(function() {
-        var div_id = $(this).parent().attr('id'); // Get the ID of the parent <div>
-        var selectedValue = $(this).val(); // Get the selected option value
+      // Add click event listener to all checkboxes
+      $(".switch input[type='checkbox']").click(function() {
+        var div_id = $(this).parent().find(".answer-container").attr('id'); // Get the ID of the parent <div>
 
         // Create a data object to send to the server
         var dataToSend = {
-          "div_id": div_id,
-          "selectedValue": selectedValue
+          "div_id": div_id
         };
 
         $.ajax({
