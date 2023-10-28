@@ -8,7 +8,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 # function to add to JSON
 def add_user(userdata, filename='data.json'):
-    with open('db.json','r+') as file:
+    with open('app/db.json','r+') as file:
           # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
@@ -23,7 +23,7 @@ def add_user(userdata, filename='data.json'):
 
 @app.route("/")
 def main():
-    with open ('db.json') as f:
+    with open ('app/db.json') as f:
             data = json.load(f)
             print(data['users'])
             session['maxid'] = max(user['id'] for user in data['users'])
@@ -41,7 +41,7 @@ def login():
         print(username)
         # Get the user associated with these credentials
         
-        with open ('db.json') as f:
+        with open ('app/db.json') as f:
             data = json.load(f)
             print(data['users'])
             for user in data['users']:
@@ -81,14 +81,14 @@ def signup():
 def match():
     
     currentuser = session['user']
-    with open ('db.json') as f:
+    with open ('app/db.json') as f:
             data = json.load(f)
             if currentuser not in data['users']:
                 f.close()
                 add_user(currentuser)
     session['matches'] = []
     elo=0
-    with open ('db.json') as f:
+    with open ('app/db.json') as f:
             data = json.load(f)
             for user in data['users']:
                 if user != currentuser:

@@ -100,8 +100,12 @@
             "name": "Alice",
             "password": "alice",
             "bio": "I want to learn to code",
-            "interests": ["Coding & Technology"],
-            "skills": {"Business & Finance": "intermediate"}
+            "interests": [
+                "Coding & Technology"
+            ],
+            "skills": {
+                "Business & Finance": "intermediate"
+            }
         },
         {
             "id": 8,
@@ -109,17 +113,32 @@
             "name": "Bob",
             "password": "bob",
             "bio": "Im bob",
-            "interests": ["Coding & Technology", "Photography & Videography", "Personal Development"],
-            "skills": {"Cooking & Baking": "intermediate", "Arts & Craft": "intermediate", "Coding & Technology": "intermediate", "Fitness & Wellbeing": "advanced"}
+            "interests": [
+                "Coding & Technology",
+                "Photography & Videography",
+                "Personal Development"
+            ],
+            "skills": {
+                "Cooking & Baking": "intermediate",
+                "Arts & Craft": "intermediate",
+                "Coding & Technology": "intermediate",
+                "Fitness & Wellbeing": "advanced"
+            }
         },
         {
             "id": 9,
             "username": "charlie",
             "name": "Charlie",
-            "bio":"I am a student. I am interested in learning new skills and meeting new people.",
+            "bio": "I am a student. I am interested in learning new skills and meeting new people.",
             "password": "charlie",
-            "interests": ["Music & Instruments", "Languages & Communications"],
-            "skills": {"Photography & Videography": "expert", "Coding & Technology": "beginner"}
+            "interests": [
+                "Music & Instruments",
+                "Languages & Communications"
+            ],
+            "skills": {
+                "Photography & Videography": "expert",
+                "Coding & Technology": "beginner"
+            }
         },
         {
             "id": 10,
@@ -127,8 +146,134 @@
             "name": "Diana",
             "bio": "I am a student. I am interested in learning new skills and meeting new people.",
             "password": "diana",
-            "interests": ["Business & Finance", "Outdoor & Adventure", "Arts & Craft", "Fitness & Wellbeing"],
-            "skills": {"Personal Development": "beginner", "Business & Finance": "beginner", "Outdoor & Adventure": "beginner"}
+            "interests": [
+                "Business & Finance",
+                "Outdoor & Adventure",
+                "Arts & Craft",
+                "Fitness & Wellbeing"
+            ],
+            "skills": {
+                "Personal Development": "beginner",
+                "Business & Finance": "beginner",
+                "Outdoor & Adventure": "beginner"
+            }
+        },
+        {
+            "id": 11,
+            "username": "nancy",
+            "name": "Nancy",
+            "password": "nancy",
+            "bio": "I love traveling and trying new cuisines.",
+            "interests": ["Outdoor & Adventure", "Cooking & Baking"],
+            "skills": {
+                "Outdoor & Adventure": "advanced",
+                "Cooking & Baking": "intermediate"
+            }
+        },
+        {
+            "id": 12,
+            "username": "oscar",
+            "name": "Oscar",
+            "password": "oscar",
+            "bio": "Tech enthusiast and coder.",
+            "interests": ["Coding & Technology", "Fitness & Wellbeing"],
+            "skills": {
+                "Coding & Technology": "expert",
+                "Fitness & Wellbeing": "intermediate"
+            }
+        },  {
+            "id": 13,
+            "username": "peter",
+            "name": "Peter",
+            "password": "peter",
+            "bio": "I love arts and crafts.",
+            "interests": ["Arts & Craft", "Music & Instruments"],
+            "skills": {
+                "Arts & Craft": "expert",
+                "Music & Instruments": "intermediate"
+            }
+        },
+        {
+            "id": 14,
+            "username": "quincy",
+            "name": "Quincy",
+            "password": "quincy",
+            "bio": "Fitness junkie and health nut.",
+            "interests": ["Fitness & Wellbeing"],
+            "skills": {
+                "Fitness & Wellbeing": "expert"
+            }
+        },
+        {
+            "id": 15,
+            "username": "rachel",
+            "name": "Rachel",
+            "password": "rachel",
+            "bio": "I am passionate about personal development.",
+            "interests": ["Personal Development", "Languages & Communications"],
+            "skills": {
+                "Personal Development": "advanced",
+                "Languages & Communications": "beginner"
+            }
+        },
+        {
+            "id": 16,
+            "username": "steve",
+            "name": "Steve",
+            "password": "steve",
+            "bio": "Tech geek and gamer.",
+            "interests": ["Coding & Technology"],
+            "skills": {
+                "Coding & Technology": "advanced"
+            }
+        },
+        {
+            "id": 17,
+            "username": "tina",
+            "name": "Tina",
+            "password": "tina",
+            "bio": "I love cooking and hosting dinners.",
+            "interests": ["Cooking & Baking", "Home & DIY"],
+            "skills": {
+                "Cooking & Baking": "expert",
+                "Home & DIY": "intermediate"
+            }
+        },
+        {
+            "id": 18,
+            "username": "umar",
+            "name": "Umar",
+            "password": "umar",
+            "bio": "Outdoor enthusiast and adventure lover.",
+            "interests": ["Outdoor & Adventure", "Fitness & Wellbeing"],
+            "skills": {
+                "Outdoor & Adventure": "intermediate",
+                "Fitness & Wellbeing": "advanced"
+            }
+        },
+        {
+            "id": 19,
+            "username": "vicky",
+            "name": "Vicky",
+            "password": "vicky",
+            "bio": "Interested in business and finance.",
+            "interests": ["Business & Finance", "Personal Development"],
+            "skills": {
+                "Business & Finance": "advanced",
+                "Personal Development": "beginner"
+            }
+        },
+        {
+            "id": 20,
+            "username": "zach",
+            "name": "Zach",
+            "password": "zach",
+            "bio": "I enjoy the great outdoors and photography.",
+            "interests": ["Outdoor & Adventure", "Photography & Videography"],
+            "skills": {
+                "Outdoor & Adventure": "expert",
+                "Photography & Videography": "advanced"
+            }
         }
     ]
 }
